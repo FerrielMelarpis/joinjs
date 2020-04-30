@@ -24,10 +24,13 @@
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "docs": "jsdoc src -d apidocs"
+    "docs": "jsdoc src -d apidocs",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -74,5 +77,6 @@
         }
       ]
     }
-  }
+  },
+  "snyk": true
 }
