@@ -27,7 +27,7 @@
     "docs": "jsdoc src -d apidocs"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
